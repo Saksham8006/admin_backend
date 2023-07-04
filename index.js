@@ -41,6 +41,11 @@ mongoose.connect("mongodb+srv://SakshamSharma:sakshamsharma@cluster0.arymklb.mon
 //   });
 
 
+app.get('/', (req,res) =>{
+
+		res.send("Api is running fine.");
+})
+
 
 
 app.get("/api/reviews/read/:id", async (req, res) => {
